@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARADGAMEPLAY | Official</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800;900&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--red:#ef3340;--bg:#08090d;--card:#12141c;--text:#f5f5f7;--muted:#969aa9}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Vazirmatn,Tahoma,sans-serif;background:var(--bg);color:var(--text);line-height:2;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 80% 0,#7d1025 0,transparent 35%),radial-gradient(circle at 0 100%,#32101b 0,transparent 35%),#08090d}
+body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.16;background-image:linear-gradient(#fff1 1px,transparent 1px),linear-gradient(90deg,#fff1 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+header{position:sticky;top:0;z-index:5;background:#08090ddd;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff12}
+nav{max-width:1150px;width:calc(100% - 32px);margin:auto;min-height:75px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font:900 22px Orbitron,sans-serif;letter-spacing:1px}.logo span{color:var(--red)}
+nav .links{display:flex;gap:24px;font-size:13px}a{color:inherit;text-decoration:none}.links a{color:#c4c6d0}.links a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 20px;border-radius:11px;font:800 13px Vazirmatn;border:1px solid #ffffff16;transition:.25s}
+.btn:hover{transform:translateY(-3px)}.primary{background:var(--red);color:white}.secondary{background:#ffffff08}
+.hero{max-width:1150px;width:calc(100% - 32px);margin:auto;min-height:610px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;padding:75px 0}
+.badge{display:inline-block;color:#ff8189;background:#ef334012;border:1px solid #ef334044;border-radius:50px;padding:4px 13px;font-size:11px;margin-bottom:20px}
+h1{font:900 clamp(35px,5vw,64px)/1.4 Orbitron,sans-serif}h1 span{color:var(--red)}h1 small{display:block;color:#a7aab8;font:800 12px Orbitron;letter-spacing:3px;margin-top:10px}
+.hero p{color:var(--muted);font-size:14px;max-width:500px;margin:22px 0}.actions{display:flex;flex-wrap:wrap;gap:12px}
+.visual{display:grid;place-items:center;min-height:370px}.planet{width:min(360px,80vw);aspect-ratio:1;border:1px solid #ef334055;border-radius:50%;display:grid;place-items:center;position:relative;background:radial-gradient(circle at 35% 30%,#ef334033,transparent 55%);box-shadow:0 0 90px #ef33401c;animation:float 6s ease-in-out infinite}
+.planet:before,.planet:after{content:"";position:absolute;border:1px solid #ef334044;border-radius:50%}.planet:before{inset:13%}.planet:after{inset:27%}
+.core{font:900 20px Orbitron;text-align:center;border:1px solid #ef334088;border-radius:50%;width:145px;height:145px;display:grid;place-items:center;background:#1a1018;box-shadow:0 0 45px #ef334033}.core small{display:block;color:var(--red);font-size:10px}
+@keyframes float{50%{transform:translateY(-14px) rotate(3deg)}}
+.section{max-width:1150px;width:calc(100% - 32px);margin:auto;padding:70px 0}.heading{text-align:center;margin-bottom:32px}.heading small{font:800 10px Orbitron;color:var(--red);letter-spacing:3px}.heading h2{font-size:29px;font-weight:900}.heading p{color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#ffffff09,#ffffff02);border:1px solid #ffffff12;border-radius:17px;padding:25px;transition:.3s}.card:hover{transform:translateY(-6px);border-color:#ef334066}.icon{font-size:30px;margin-bottom:10px}.card h3{font-size:17px}.card p{font-size:12px;color:var(--muted);margin:7px 0 15px}
+.server{background:linear-gradient(120deg,#35111b,#111117);border:1px solid #ef334055;border-radius:20px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:20px}.server h3{font-size:20px}.address{direction:ltr;color:#ff737d;font:800 clamp(12px,2vw,19px) Orbitron;overflow-wrap:anywhere}.server p{color:var(--muted);font-size:12px}
+.socials{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.social{background:var(--card);border:1px solid #ffffff12;border-radius:14px;padding:20px;display:flex;align-items:center;gap:14px;transition:.25s}.social:hover{border-color:#ef334066;transform:translateY(-3px)}.social strong{font-size:14px}.social small{display:block;color:var(--muted);font-size:11px;direction:ltr;overflow-wrap:anywhere}
+footer{text-align:center;border-top:1px solid #ffffff12;padding:35px 15px;color:#777b8a;font-size:12px}footer b{font:900 18px Orbitron;color:white}footer b span{color:var(--red)}
+.toast{position:fixed;bottom:25px;left:50%;transform:translate(-50%,100px);opacity:0;background:#222630;border:1px solid #ef334066;border-radius:12px;padding:10px 18px;font-size:12px;transition:.3s}.toast.show{transform:translate(-50%,0);opacity:1}
+@media(max-width:800px){.hero{grid-template-columns:1fr;text-align:center;padding:55px 0}.hero p{margin:20px auto}.actions{justify-content:center}.visual{order:-1;min-height:280px}.planet{width:280px}.core{width:110px;height:110px;font-size:14px}.grid{grid-template-columns:1fr}.server{flex-direction:column;align-items:stretch}.socials{grid-template-columns:1fr}.links{display:none!important}}
+</style>
+</head>
+<body>
+<header><nav><a class="logo" href="#">ARAD<span>GAMEPLAY</span></a><div class="links"><a href="#about">درباره من</a><a href="#server">سرور</a><a href="#socials">شبکه‌ها</a></div><a class="btn primary" href="https://www.aparat.com/Aradgameplay2025" target="_blank">کانال آپارات ↗</a></nav></header>
+<main>
+<section class="hero">
+<div><div class="badge">● به دنیای ARADGAMEPLAY خوش اومدی</div><h1>ARAD<span>GAMEPLAY</span><small>ENTER THE GAMING UNIVERSE</small></h1><p>اینجا دنیای گیمینگ آراده؛ جایی برای گیم‌پلی‌های خفن، لحظات سرگرم‌کننده و ماجراجویی‌های جدید. آماده‌ای وارد مرحله بعدی بشی؟</p><div class="actions"><a class="btn primary" href="https://www.aparat.com/Aradgameplay2025" target="_blank">🎮 ورود به کانال</a><a class="btn secondary" href="https://rubika.ir/aradgameplay2025" target="_blank">روبیکا ↗</a></div></div>
+<div class="visual"><div class="planet"><div class="core">ARAD<br><small>ONLINE</small></div></div></div>
+</section>
+<section class="section" id="about"><div class="heading"><small>ABOUT ARADGAMEPLAY</small><h2>به دنیای من خوش اومدی</h2><p>یک گیمر، یک دنیا ماجراجویی</p></div><div class="grid"><div class="card"><div class="icon">🎮</div><h3>محتوای گیمینگ</h3><p>گیم‌پلی‌های جذاب و لحظات سرگرم‌کننده برای کامیونیتی.</p></div><div class="card"><div class="icon">🚀</div><h3>دنیای آینده</h3><p>طراحی فضایی، قرمز و مشکی با حال‌وهوای آینده‌نگر.</p></div><div class="card"><div class="icon">⚡</div><h3>LEVEL UP</h3><p>هر بار یک مرحله جدید، یک تجربه بهتر و کلی خاطره.</p></div></div></section>
+<section class="section" id="server"><div class="heading"><small>SPONSOR SERVER</small><h2>سرور اسپانسر ما</h2><p>آماده‌ای وارد سرور بشی؟</p></div><div class="server"><div><h3>🌵 CACTUS GAMES</h3><p>سرور اسپانسر ARADGAMEPLAY</p><div class="address">MC.Cactus-Games.iR</div></div><button class="btn primary" id="copy">کپی آدرس سرور</button></div></section>
+<section class="section" id="socials"><div class="heading"><small>CONNECT WITH ARAD</small><h2>همراه من باش</h2><p>برای اخبار و محتواهای جدید دنبالم کن</p></div><div class="socials"><a class="social" href="https://www.aparat.com/Aradgameplay2025" target="_blank"><b>▶</b><div><strong>کانال آپارات</strong><small>aparat.com/Aradgameplay2025</small></div>↗</a><a class="social" href="https://rubika.ir/aradgameplay2025" target="_blank"><b>◈</b><div><strong>کانال روبیکا</strong><small>rubika.ir/aradgameplay2025</small></div>↗</a></div></section>
+</main>
+<footer><b>ARAD<span>GAMEPLAY</span></b><p>ساخته شده برای یک دنیای گیمینگ بزرگ‌تر 🚀</p><p>© 2026 ARADGAMEPLAY</p></footer>
+<div class="toast" id="toast">آدرس سرور کپی شد ✓</div>
+<script>
+const btn=document.getElementById("copy"),toast=document.getElementById("toast"),address="MC.Cactus-Games.iR";
+btn.onclick=async()=>{try{await navigator.clipboard.writeText(address)}catch(e){const x=document.createElement("textarea");x.value=address;document.body.appendChild(x);x.select();document.execCommand("copy");x.remove()}toast.classList.add("show");setTimeout(()=>toast.classList.remove("show"),2500)};
+</script>
+</body>
+</html>
